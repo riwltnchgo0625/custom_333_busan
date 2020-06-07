@@ -1,16 +1,20 @@
 package com.example.busanapp.home;
 
+import android.content.Intent;
 import android.graphics.drawable.GradientDrawable;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.WindowManager;
+import android.widget.ImageView;
 
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.example.busanapp.Common.LoginSignup.RetailerStartUpScreen;
 import com.example.busanapp.HelperClasses.Home.CategoriesAdapter;
 import com.example.busanapp.HelperClasses.Home.CategoriesHelperClass;
 import com.example.busanapp.HelperClasses.Home.FeaturedAdapter;
@@ -21,6 +25,7 @@ import com.example.busanapp.R;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Objects;
 
 public class HomeFragment extends Fragment {
 
@@ -36,6 +41,7 @@ public class HomeFragment extends Fragment {
 
     public View onCreateView(@NonNull LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_home, container, false);
+        getActivity().getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,WindowManager.LayoutParams.FLAG_FULLSCREEN);
 
 
         featuredRecycler = view.findViewById(R.id.featured_recycler);
@@ -43,6 +49,18 @@ public class HomeFragment extends Fragment {
         mostViewedRecycler();
         categoriesRecycler = view.findViewById(R.id.categories_recycler);
         categoriesRecycler();
+
+        ImageView imageView = (ImageView) view.findViewById(R.id.login_image_button);
+        imageView.setOnClickListener(new ImageView.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if (v.getId() == R.id.login_image_button){
+                    Intent j = new Intent(getActivity().getApplicationContext(),RetailerStartUpScreen.class);
+                    startActivity(j);
+                }
+            }
+        });
+
 
         /*LinearLayoutManager horizonalLayoutManager = new LinearLayoutManager(getActivity(), RecyclerView.HORIZONTAL, false);
 
@@ -88,7 +106,13 @@ public class HomeFragment extends Fragment {
 
         RecyclerView.Adapter adapter = new FeaturedAdapter(featuredLocations);
         featuredRecycler.setAdapter(adapter);
+
+
         return view;
+    }
+
+    public void callRetailerScreens(View view){
+        getActivity().startActivity(new Intent(getActivity().getApplicationContext(),RetailerStartUpScreen.class));
     }
 
     private void mostViewedRecycler(){ mostViewdRecycler.setHasFixedSize(true);
@@ -132,6 +156,8 @@ public class HomeFragment extends Fragment {
         super.onCreate(savedInstanceState);
         setHasOptionsMenu(true);
     }
+
+
 
 }
 
