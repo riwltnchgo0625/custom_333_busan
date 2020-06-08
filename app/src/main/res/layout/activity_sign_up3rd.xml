@@ -25,7 +25,7 @@
             android:id="@+id/signup_title_text"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/create_account"
+            android:text="Signup"
             android:textSize="40sp"
             android:textColor="@color/black"
             android:textAllCaps="true"

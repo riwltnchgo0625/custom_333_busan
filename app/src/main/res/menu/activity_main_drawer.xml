@@ -12,7 +12,17 @@
 
     </group>
 
-    <item android:title="@string/menu_calendar">
+    <item android:title="체크리스트">
+        <menu>
+            <item
+                android:id="@+id/nav_checklist"
+                android:icon="@drawable/ic_check_black_24dp"
+                android:title="체크리스트" />
+        </menu>
+    </item>
+
+
+    <item android:title="@string/calendar">
         <menu>
             <item
                 android:id="@+id/nav_calendar"
@@ -20,6 +30,8 @@
                 android:title="@string/menu_calendar" />
         </menu>
     </item>
+
+
 
     <item android:title="지도">
 

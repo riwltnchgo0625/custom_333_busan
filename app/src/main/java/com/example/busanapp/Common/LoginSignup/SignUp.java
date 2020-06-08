@@ -44,7 +44,7 @@ public class SignUp extends AppCompatActivity {
         pairs[3] = new Pair<View, String>(titleText, "transition_title_text");
 
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
-            ActivityOptions options = ActivityOptions.makeSceneTransitionAnimation(SignUp.this, pairs);
+            ActivityOptions options = ActivityOptions.makeSceneTransitionAnimation(SignUp.this,pairs);
             startActivity(intent, options.toBundle());
         } else {
             startActivity(intent);
