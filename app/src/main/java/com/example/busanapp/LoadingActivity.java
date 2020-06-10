@@ -13,6 +13,7 @@ import android.os.Bundle;
 import android.view.MenuItem;
 
 import com.example.busanapp.calendar.CalendarFragment;
+import com.example.busanapp.mytrip.MyTripFragment;
 import com.example.busanapp.ui.home.BusFragment;
 import com.example.busanapp.ui.home.CafeFragment;
 import com.example.busanapp.ui.home.ChecklistFragment;
@@ -64,6 +65,7 @@ public class LoadingActivity extends AppCompatActivity implements NavigationView
                     new HomeFragment()).commit();
             navigationView.setCheckedItem(R.id.nav_home);
         }
+
     }
 
     @Override
@@ -156,6 +158,9 @@ public class LoadingActivity extends AppCompatActivity implements NavigationView
                 getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
                         new ChecklistFragment()).commit();
 
+            case R.id.nav_mytrip:
+                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
+                        new MyTripFragment()).commit();
             default:
                 break;
         }

@@ -40,6 +40,14 @@
         <activity android:name=".home.Course_Activity_Cafe" />
         <activity android:name=".home.RecyclerViewAdapter" />
         <activity android:name=".home.Course_Activity" />
+        <activity android:name=".mytrip.AddNewTripActivity"/>
+        <activity android:name=".mytrip.PlaceList"/>
+        <activity android:name=".mytrip.Constants"/>
+        <activity android:name=".mytrip.MyAdapter"/>
+        <activity android:name=".mytrip.MyItem"/>
+        <activity android:name=".mytrip.MyTripFragment"/>
+        <activity android:name=".mytrip.TravelmateSnackbars"/>
+        <activity android:name=".mytrip.Utils"/>
         <activity
             android:name=".LoadingActivity"
             android:label="부산여행 BusanTravel"
