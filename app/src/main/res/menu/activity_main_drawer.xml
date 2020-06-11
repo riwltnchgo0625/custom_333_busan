@@ -27,7 +27,7 @@
             <item
                 android:id="@+id/nav_mytrip"
                 android:icon="@drawable/ic_mode_edit_black_24dp"
-                android:title="체크리스트" />
+                android:title="My Trip" />
         </menu>
     </item>
 
@@ -96,49 +96,4 @@
                 android:title="@string/menu_cafe" />
         </menu>
     </item>
-
-    <item android:title="편의시설">
-
-        <menu>
-            <item
-                android:id="@+id/nav_find_hospital"
-                android:checkable="true"
-                android:icon="@drawable/ic_find_hospital"
-                android:title="병원 검색하기" />
-
-            <item
-                android:id="@+id/nav_parking"
-                android:checkable="true"
-                android:icon="@drawable/ic_local_parking_black_24dp"
-                android:title="공영 주차장" />
-
-            <item
-                android:id="@+id/nav_bus"
-                android:checkable="true"
-                android:icon="@drawable/ic_directions_bus_black_24dp"
-                android:title="버스" />
-
-            <item
-                android:id="@+id/nav_disabled_person"
-                android:checkable="true"
-                android:icon="@drawable/ic_disabled_person"
-                android:title="장애인 편의시설 보유 업소" />
-        </menu>
-
-    </item>
-
-    <item android:title="음식점">
-
-        <menu>
-
-            <item
-                android:id="@+id/nav_find_food"
-                android:checkable="true"
-                android:icon="@drawable/ic_find_food"
-                android:title="모범음식점 검색하기" />
-
-        </menu>
-
-    </item>
-
 </menu>

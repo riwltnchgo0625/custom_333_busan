@@ -13,15 +13,10 @@ import android.os.Bundle;
 import android.view.MenuItem;
 
 import com.example.busanapp.calendar.CalendarFragment;
-import com.example.busanapp.mytrip.MyTripFragment;
-import com.example.busanapp.ui.home.BusFragment;
 import com.example.busanapp.ui.home.CafeFragment;
 import com.example.busanapp.ui.home.ChecklistFragment;
 import com.example.busanapp.ui.home.DaytripFragment;
-import com.example.busanapp.ui.home.DisabledFragment;
 import com.example.busanapp.ui.home.EatFragment;
-import com.example.busanapp.ui.home.FindFoodFragment;
-import com.example.busanapp.ui.home.FindHospitalFragment;
 import com.example.busanapp.home.HomeFragment;
 import com.example.busanapp.ui.home.CultureFragment;
 import com.example.busanapp.ui.home.FoodCourseFragment;
@@ -76,39 +71,6 @@ public class LoadingActivity extends AppCompatActivity implements NavigationView
                         new HomeFragment()).commit();
                 break;
 
-            /*case R.id.nav_hospital:
-                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
-                        new HospitalFragment()).commit();
-                break;*/
-            case R.id.nav_find_hospital:
-                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
-                        new FindHospitalFragment()).commit();
-                break;
-
-            case R.id.nav_parking:
-                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
-                        new ParkingFragment()).commit();
-                break;
-
-            case R.id.nav_bus:
-                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
-                        new BusFragment()).commit();
-                break;
-            case R.id.nav_disabled_person:
-                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
-                        new DisabledFragment()).commit();
-                break;
-
-            /*case R.id.nav_food:
-                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
-                        new FoodFragment()).commit();
-                break;*/
-
-            case R.id.nav_find_food:
-                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
-                        new FindFoodFragment()).commit();
-                break;
-
             case R.id.nav_calendar:
                 getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
                         new CalendarFragment()).commit();
@@ -158,9 +120,6 @@ public class LoadingActivity extends AppCompatActivity implements NavigationView
                 getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
                         new ChecklistFragment()).commit();
 
-            case R.id.nav_mytrip:
-                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
-                        new MyTripFragment()).commit();
             default:
                 break;
         }
