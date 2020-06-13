@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     package="com.example.busanapp">
 
     <uses-permission android:name="android.permission.INTERNET" />
@@ -25,12 +26,25 @@
         android:roundIcon="@drawable/profile_image_light_round_remove"
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
-        android:usesCleartextTraffic="true">
-        <activity android:name=".Common.LoginSignup.SignUp3rd"></activity>
-        <activity android:name=".Common.LoginSignup.SignUp2ndClass" />
-        <activity android:name=".Common.LoginSignup.SignUp" />
-        <activity android:name=".Common.LoginSignup.Login" />
-        <activity android:name=".Common.LoginSignup.RetailerStartUpScreen" /> <!-- <activity android:name=".home.Course_two_three_trip"></activity> -->
+        android:usesCleartextTraffic="true"
+        tools:targetApi="m">
+
+        <activity android:name="com.example.busanapp.Common.LoginSignup.ForgetPasswordSuccessMessage"
+            tools:ignore="InnerclassSeparator" />
+        <activity android:name="com.example.busanapp.Common.LoginSignup.SetNewPassword"
+            tools:ignore="InnerclassSeparator" />
+        <activity android:name="com.example.busanapp.Common.LoginSignup.VerifyOTP"
+            tools:ignore="InnerclassSeparator" />
+        <activity android:name="com.example.busanapp.Common.LoginSignup.SignUp3rd"
+            tools:ignore="InnerclassSeparator" />
+        <activity android:name="com.example.busanapp.Common.LoginSignup.SignUp2ndClass"
+            tools:ignore="InnerclassSeparator" />
+        <activity android:name="com.example.busanapp.Common.LoginSignup.SignUp"
+            tools:ignore="InnerclassSeparator" />
+        <activity android:name="com.example.busanapp.Common.LoginSignup.Login"
+            tools:ignore="InnerclassSeparator" />
+        <activity android:name="com.example.busanapp.Common.LoginSignup.RetailerStartUpScreen"
+            tools:ignore="InnerclassSeparator" /> <!-- <activity android:name=".home.Course_two_three_trip"></activity> -->
         <activity android:name=".home.RecyclerViewAdapterOneTwoTrip" />
         <activity android:name=".home.Course_one_two_trip" />
         <activity android:name=".home.Course_Activity_one_two_trip" />
@@ -40,14 +54,6 @@
         <activity android:name=".home.Course_Activity_Cafe" />
         <activity android:name=".home.RecyclerViewAdapter" />
         <activity android:name=".home.Course_Activity" />
-        <activity android:name=".mytrip.AddNewTripActivity"/>
-        <activity android:name=".mytrip.PlaceList"/>
-        <activity android:name=".mytrip.Constants"/>
-        <activity android:name=".mytrip.MyAdapter"/>
-        <activity android:name=".mytrip.MyItem"/>
-        <activity android:name=".mytrip.MyTripFragment"/>
-        <activity android:name=".mytrip.TravelmateSnackbars"/>
-        <activity android:name=".mytrip.Utils"/>
         <activity
             android:name=".LoadingActivity"
             android:label="부산여행 BusanTravel"

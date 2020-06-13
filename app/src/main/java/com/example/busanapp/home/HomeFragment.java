@@ -92,7 +92,9 @@ public class HomeFragment extends Fragment {
                     0 );
         }
         else{
+            assert lm != null;
             Location location = lm.getLastKnownLocation(LocationManager.GPS_PROVIDER);
+            assert location != null;
             String provider = location.getProvider();
             double longitude = location.getLongitude();
             double latitude = location.getLatitude();
@@ -149,7 +151,7 @@ public class HomeFragment extends Fragment {
 
 
 
-    final LocationListener gpsLocationListener = new LocationListener() {
+    private final LocationListener gpsLocationListener = new LocationListener() {
         public void onLocationChanged(Location location) {
 
             String provider = location.getProvider();

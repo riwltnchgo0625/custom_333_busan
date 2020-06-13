@@ -112,6 +112,7 @@
             </RelativeLayout>
 
             <Button
+
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="LOGIN"
@@ -121,6 +122,7 @@
                 />
 
             <Button
+                android:transitionName="transition_signup"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/create_account"
